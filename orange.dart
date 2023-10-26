@@ -108,4 +108,34 @@ print('This score is not between 0-100');
       print('$year is not a leap year.');
   }
 
+  
+/*Write a basic calculator that can perform addition, subtraction, multiplication, 
+and division based on user input. For example,
+the user inputs two numbers and an operator (+, -, *, /), and the program displays the result*/
+
+stdout.write('Enter a number 1 = ');
+  double num1 = double.parse(stdin.readLineSync()!);
+   stdout.write('Enter a number 2 = ');
+  double num2 = double.parse(stdin.readLineSync()!);
+   stdout.write('Enter oparation + or - or * or /');
+  String oparation = stdin.readLineSync()!;
+
+  if(oparation=='+')
+  {
+    print(num1+num2);
+  }
+  else if(oparation=='-')
+  {
+    print(num1-num2);
+  }
+  else if(oparation=='*')
+  {
+    print(num1*num2);
+  }
+  else if(oparation=='/'&& num2!=0)
+  {
+    print(num1/num2);
+  }
+  else 
+  print('You entered the wrong number or operation');
 }
